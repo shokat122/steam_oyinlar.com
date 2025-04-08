@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To‘lov Sahifasi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<div class="container mx-auto p-4">
+    <h1 class="text-2xl font-semibold text-center mb-6">To‘lovni amalga oshiring</h1>
+
+    <!-- To‘lov formasi -->
+    <form action="your_payment_processing_url" method="POST" class="bg-white p-6 rounded shadow-md">
+        <div class="mb-4">
+            <label class="block text-gray-700 font-semibold mb-1">Ism va Familiya</label>
+            <input type="text" name="fullname" placeholder="Shovkat Sh." class="w-full border border-gray-300 rounded px-3 py-2" required>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 font-semibold mb-1">Karta raqami</label>
+            <input type="text" name="card_number" placeholder="0000 1234 5678 9012" class="w-full border border-gray-300 rounded px-3 py-2" required>
+        </div>
+
+        <div class="mb-4 flex gap-4">
+            <div class="w-1/2">
+                <label class="block text-gray-700 font-semibold mb-1">Amal qilish muddati</label>
+                <input type="text" name="expiry_date" placeholder="MM/YY" class="w-full border border-gray-300 rounded px-3 py-2" required>
+            </div>
+            <div class="w-1/2">
+                <label class="block text-gray-700 font-semibold mb-1">CVV</label>
+                <input type="text" name="cvv" placeholder="123" class="w-full border border-gray-300 rounded px-3 py-2" required>
+            </div>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mt-4">
+            To‘lovni amalga oshirish
+        </button>
+    </form>
+
+    <!-- Payme test tugmasi -->
+    <a href="https://checkout.test.paycom.uz/NdIwNTYxN2Y1MmYwOTY1YmJkNzU"
+       class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full block text-center mt-6">
+        💳 To‘lovni boshlash
+    </a>
+</div>
+
+</body>
+</html>
